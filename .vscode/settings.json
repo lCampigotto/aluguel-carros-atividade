@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "Redshift Driver (Dedicated ver)",
+            "name": "aluguel_carros",
+            "database": "aluguel_carros",
+            "username": "postgres",
+            "password": "lucas0308"
+        }
+    ]
+}
