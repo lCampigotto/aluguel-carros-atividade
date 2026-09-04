@@ -30,7 +30,7 @@ erDiagram
         varchar conta UK
     }
     ATENDENTE {
-        int id PK
+        int ida PK
         varchar cpf UK
         varchar nomeCompleto
         varchar email UK
@@ -50,12 +50,14 @@ erDiagram
         date inicio
         date fim
         varchar tipoPagamento
-        int idc FK
-        int idv FK
+        int id_cliente FK
+        int id_veiculo FK
+        int id_atendente FK
     }
 
     CLIENTE ||--o{ CONTRATOS : "firma"
     VEICULOS ||--o{ CONTRATOS : "e alugado em"
+    ATENDENTE ||--o{ CONTRATOS : "atende"
 ```
 
 > Scripts
