@@ -1,2 +1,3 @@
 .vscode/
 *.session.sql
+aluguel_carros*.session.sql
