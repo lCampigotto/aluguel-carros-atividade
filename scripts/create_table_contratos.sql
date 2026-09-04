@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS contratos (
     inicio DATE NOT NULL,
     fim DATE NOT NULL,
     tipoPagamento VARCHAR(50) NOT NULL CHECK(tipoPagamento IN ('pix','cartao','boleto','transferencia')),
-    idc INT NOT NULL REFERENCES cliente(id),
-    idv INT NOT NULL REFERENCES veiculos(idv),
-    ida_atendente INT REFERENCES atendente(ida)
+    id_cliente INT NOT NULL REFERENCES cliente(id),
+    id_veiculo INT NOT NULL REFERENCES veiculos(idv),
+    id_atendente INT REFERENCES atendente(ida)
 );

@@ -1,4 +1,4 @@
-INSERT INTO contratos (numero, inicio, fim, tipoPagamento, id, idv, ida_atendente)
+INSERT INTO contratos (numero, inicio, fim, tipoPagamento, id_cliente, id_veiculo, id_atendente)
 VALUES
     ('C001', '2026-09-01', '2026-09-10', 'pix', 1, 1, 1),
     ('C002', '2026-09-01', '2026-09-15', 'cartao', 2, 2, 1),
